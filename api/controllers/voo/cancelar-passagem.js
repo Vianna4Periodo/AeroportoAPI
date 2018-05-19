@@ -1,10 +1,10 @@
 module.exports = {
 
 
-  friendlyName: 'Update',
+  friendlyName: 'Cancelar passagem',
 
 
-  description: 'Update cliente.',
+  description: '',
 
 
   inputs: {
