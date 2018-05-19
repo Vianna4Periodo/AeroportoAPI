@@ -8,18 +8,31 @@ module.exports = {
 
 
   inputs: {
-
+  	id: {
+  		type: 'number',
+  		required: true
+  	}
   },
 
 
   exits: {
-
+  	notFound: {
+  		statusCode: '404'
+  	}
   },
 
 
   fn: async function (inputs, exits) {
 
-    return exits.success();
+  	var voo = await Voo.findOne({
+  		id: inputs.id
+  	}).populate('voos');
+
+  	if (!voo) {
+  		return exits.notFound();
+  	}
+
+    return exits.success(voo);
 
   }
 

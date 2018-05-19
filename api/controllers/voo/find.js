@@ -19,7 +19,8 @@ module.exports = {
 
   fn: async function (inputs, exits) {
 
-    return exits.success();
+  	var voos = await Voo.find();
+    return exits.success(voos);
 
   }
 
