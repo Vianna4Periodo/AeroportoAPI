@@ -15,12 +15,12 @@ module.exports = {
     dataSaida: {
       type: 'string',
       required: true,
-      isNotEmptyString: true
+      columnType: 'datetime'
     },
     dataChegada: {
       type: 'string',
       required: true,
-      isNotEmptyString: true
+      columnType: 'datetime'
     },
     destino: {
       type: 'string',

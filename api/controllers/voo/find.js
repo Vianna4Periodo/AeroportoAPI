@@ -19,8 +19,12 @@ module.exports = {
 
   fn: async function (inputs, exits) {
 
-  	var voos = await Voo.find();
-    return exits.success(voos);
+    try {
+      var voos = await Voo.find();
+      return exits.success(voos);
+    } catch (error) {
+      return exits.erro(error);
+    }
 
   }
 

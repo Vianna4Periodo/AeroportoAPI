@@ -8,7 +8,15 @@ module.exports = {
 
 
   inputs: {
-
+  	nome: {
+  		type: 'string',
+  		required: true
+  	},
+  	email: {
+  		type: 'string',
+  		required: true,
+  		isEmail: true
+  	}
   },
 
 
@@ -18,8 +26,13 @@ module.exports = {
 
 
   fn: async function (inputs, exits) {
-
-    return exits.success();
+  	
+  	try {
+  		var cliente = await Cliente.create(inputs).fetch();
+  		return exits.success(cliente);
+  	} catch(error) {
+  		return exits.error(error);
+  	}
 
   }
 

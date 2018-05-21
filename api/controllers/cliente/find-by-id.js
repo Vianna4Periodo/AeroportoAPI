@@ -24,15 +24,19 @@ module.exports = {
 
   fn: async function (inputs, exits) {
 
-  	var cliente = await Cliente.findOne({
-  		id: inputs.id
-  	}).populate('voos');
+  	try {
+      var cliente = await Cliente.findOne({
+        id: inputs.id
+      }).populate('voos');
 
-  	if (!cliente) {
-  		return exits.notFound();
-  	}
+      if (!cliente) {
+        return exits.notFound();
+      }
 
-    return exits.success(cliente);
+      return exits.success(cliente);
+    } catch (error) {
+      return exits(error);
+    }
 
   }
 

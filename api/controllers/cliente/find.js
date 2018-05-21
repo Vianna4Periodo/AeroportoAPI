@@ -19,8 +19,12 @@ module.exports = {
 
   fn: async function (inputs, exits) {
 
-  	var clientes = await Cliente.find();
-    return exits.success(clientes);
+    try {
+      var clientes = await Cliente.find();
+      return exits.success(clientes);
+    } catch (error) {
+      return exits.error(error);
+    }
 
   }
 

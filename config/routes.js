@@ -48,7 +48,6 @@ module.exports.routes = {
   'GET /api/v1/clientes': { controller: 'ClienteController', action: 'find' },
   'GET /api/v1/clientes/:id': { controller: 'ClienteController', action: 'find-by-id' },
   'POST /api/v1/clientes': { controller: 'ClienteController', action: 'save' },
-  'DELETE /api/v1/clientes/:id': { controller: 'ClienteController', action: 'delete' },
 
   'GET /api/v1/voos': { controller: 'VooController', action: 'find' },
   'GET /api/v1/voos/:id': { controller: 'VooController', action: 'find-by-id' },
