@@ -8,7 +8,18 @@ module.exports = {
 
 
   inputs: {
-
+      idVoo: {
+        type: 'number',
+        required: true
+      },
+      idCliente: {
+          type: 'number',
+          required: true
+      },
+      count: {
+          type: 'number',
+          required: true
+      }
   },
 
 
@@ -19,9 +30,6 @@ module.exports = {
 
   fn: async function (inputs, exits) {
 
-    return exits.success();
-
   }
-
 
 };

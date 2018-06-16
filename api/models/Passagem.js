@@ -1,5 +1,5 @@
 /**
- * Cliente.js
+ * Passagem.js
  *
  * @description :: A model definition.  Represents a database table/collection/etc.
  * @docs        :: https://sailsjs.com/docs/concepts/models-and-orm/models
@@ -12,19 +12,7 @@ module.exports = {
     //  ╔═╗╦═╗╦╔╦╗╦╔╦╗╦╦  ╦╔═╗╔═╗
     //  ╠═╝╠╦╝║║║║║ ║ ║╚╗╔╝║╣ ╚═╗
     //  ╩  ╩╚═╩╩ ╩╩ ╩ ╩ ╚╝ ╚═╝╚═╝
-    nome: {
-      type: 'string',
-      maxLength: 200,
-      required: true,
-      isNotEmptyString: true
-    },
-    email: {
-      type: 'string',
-      maxLength: 200,
-      required: true,
-      unique: true,
-      isEmail: true
-    },
+
 
     //  ╔═╗╔╦╗╔╗ ╔═╗╔╦╗╔═╗
     //  ║╣ ║║║╠╩╗║╣  ║║╚═╗
@@ -34,11 +22,13 @@ module.exports = {
     //  ╔═╗╔═╗╔═╗╔═╗╔═╗╦╔═╗╔╦╗╦╔═╗╔╗╔╔═╗
     //  ╠═╣╚═╗╚═╗║ ║║  ║╠═╣ ║ ║║ ║║║║╚═╗
     //  ╩ ╩╚═╝╚═╝╚═╝╚═╝╩╩ ╩ ╩ ╩╚═╝╝╚╝╚═╝
-    passagens: {
-      collection: 'passagem',
-      via: 'cliente'
+    cliente: {
+        model: 'cliente'
+    },
+    voo: {
+        model: 'voo'
     }
-
   },
 
 };
+

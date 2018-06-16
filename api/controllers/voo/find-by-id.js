@@ -16,9 +16,7 @@ module.exports = {
 
 
   exits: {
-  	notFound: {
-  		statusCode: '404'
-  	}
+
   },
 
 
@@ -27,10 +25,10 @@ module.exports = {
     try {
       var voo = await Voo.findOne({
         id: inputs.id
-      }).populate('clientes');
+      }).populate('passagens');
 
       if (!voo) {
-        return exits.notFound();
+        throw 'notFound';
       }
 
       return exits.success(voo);

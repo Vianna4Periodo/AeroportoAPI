@@ -32,7 +32,7 @@ module.exports = {
       required: true,
       isNotEmptyString: true
     },
-    quantidadeLugares: {
+    capacidadeMaxima: {
       type: 'number',
       required: true
     },
@@ -53,9 +53,9 @@ module.exports = {
     aeronave: {
       model: "aeronave"
     },
-    clientes: {
-      collection: 'cliente',
-      via: 'voos'
+    passagens: {
+      collection: 'passagem',
+      via: 'voo'
     }
   },
 
