@@ -16,6 +16,11 @@ module.exports = {
   		type: 'string',
   		required: true,
   		isEmail: true
+    },
+    password: {
+  		type: 'string',
+      required: true,
+      isNotEmptyString: true
   	}
   },
 
@@ -26,7 +31,7 @@ module.exports = {
 
 
   fn: async function (inputs, exits) {
-  	
+
   	try {
   		var cliente = await Cliente.create(inputs).fetch();
   		return exits.success(cliente);

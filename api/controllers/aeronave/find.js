@@ -20,7 +20,7 @@ module.exports = {
   fn: async function (inputs, exits) {
 
   	try {
-      var aeronaves = await Aeronave.find();
+      var aeronaves = await Aeronave.find().populate("voos");
       return exits.success(aeronaves);
     } catch (error) {
       return exits.error(error);

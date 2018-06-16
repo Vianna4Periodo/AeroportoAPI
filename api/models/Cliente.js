@@ -25,6 +25,13 @@ module.exports = {
       unique: true,
       isEmail: true
     },
+    password: {
+      type: 'string',
+      maxLength: 200,
+      required: true,
+      isNotEmptyString: true,
+      protect: true
+    },
 
     //  ╔═╗╔╦╗╔╗ ╔═╗╔╦╗╔═╗
     //  ║╣ ║║║╠╩╗║╣  ║║╚═╗
@@ -40,5 +47,8 @@ module.exports = {
     }
 
   },
+  customToJSON: function() {
+    return _.omit(this, ['password']);
+  }
 
 };
