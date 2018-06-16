@@ -16,7 +16,9 @@ module.exports = {
 
 
   exits: {
-
+    notFound: {
+      responseType: "notFound"
+    }
   },
 
 
@@ -27,8 +29,8 @@ module.exports = {
         id: inputs.id
       }).populate('passagens');
 
-      if (!voo) {
-        throw 'notFound';
+      if (voo ==  null) {
+        return exits.notFound();
       }
 
       return exits.success(voo);

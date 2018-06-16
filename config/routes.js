@@ -43,11 +43,9 @@ module.exports.routes = {
   //  ╔═╗╔═╗╦  ╔═╗╔╗╔╔╦╗╔═╗╔═╗╦╔╗╔╔╦╗╔═╗
   //  ╠═╣╠═╝║  ║╣ ║║║ ║║╠═╝║ ║║║║║ ║ ╚═╗
   //  ╩ ╩╩  ╩  ╚═╝╝╚╝═╩╝╩  ╚═╝╩╝╚╝ ╩ ╚═╝
-  'GET /api/v1/aeronaves': { controller: 'AeronaveController', action: 'find' },
-
-  'GET /api/v1/clientes': { controller: 'ClienteController', action: 'find' },
   'GET /api/v1/clientes/:id': { controller: 'ClienteController', action: 'find-by-id' },
   'POST /api/v1/clientes': { controller: 'ClienteController', action: 'save' },
+  'POST /api/v1/clientes/login': { controller: 'ClienteController', action: 'login' },
 
   'GET /api/v1/voos': { controller: 'VooController', action: 'find' },
   'GET /api/v1/voos/:id': { controller: 'VooController', action: 'find-by-id' },

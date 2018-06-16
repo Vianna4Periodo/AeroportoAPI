@@ -30,7 +30,7 @@ module.exports = {
       }).populate('passagens');
 
       if (cliente == null) {
-        throw 'notFound';
+        return exits.notFound();
       }
 
       return exits.success(cliente);
