@@ -24,6 +24,9 @@ module.exports = {
 
 
   exits: {
+    serverError: {
+      responseType: "serverError"
+    },
     notFound: {
       responseType: "notFound"
     }
@@ -40,12 +43,12 @@ module.exports = {
       return exits.serverError("O cliente informado não existe.");
     }
 
-    var vagasDisponiveis = voo.capacidadeMaxima - voo.passagens.lenght;
+    var vagasDisponiveis = voo.capacidadeMaxima - voo.passagens.length;
 
     if (vagasDisponiveis <= 0) {
-      return exits.success(400, "Não existem mais vagas disponíveis.");
+      return exits.success("Não existem mais vagas disponíveis.");
     } else if (vagasDisponiveis < inputs.quantidade) {
-      return exits.success(400, "Não existem vagas disponíveis para a quantidade que você precisa.");
+      return exits.success("Não existem vagas disponíveis para a quantidade que você precisa.");
     }
 
     var passagens = [];
