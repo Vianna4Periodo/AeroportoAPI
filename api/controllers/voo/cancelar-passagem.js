@@ -8,7 +8,14 @@ module.exports = {
 
 
   inputs: {
-
+    idVoo: {
+      type: 'number',
+      required: true
+    },
+    idCliente: {
+        type: 'number',
+        required: true
+    },
   },
 
 

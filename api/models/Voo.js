@@ -56,7 +56,7 @@ module.exports = {
     passagens: {
       collection: 'passagem',
       via: 'voo'
-    }
+    },
   },
 
 };
