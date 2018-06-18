@@ -41,16 +41,19 @@ module.exports = {
   fn: async function (inputs, exits) {
     var voo = await Voo.findOne({ id: inputs.idVoo }).populate("passagens");
     var cliente = await Cliente.findOne({ id: inputs.idCliente });
-    var totalPagamento = inputs.quantidade * voo.valor;
 
     if (voo == null) {
       return exits.serverError("O voo informado não existe.");
     } else if (cliente == null) {
       return exits.serverError("O cliente informado não existe.");
-    } else if (inputs.pagamento < totalPagamento) {
+    }
+
+    var totalPagamento = inputs.quantidade * voo.valor;
+
+    if (inputs.pagamento < totalPagamento) {
       return exits.success("O pagamento informado(" + inputs.pagamento + ") está abaixo do valor referente a " + inputs.quantidade + " passagen(s) que é " + totalPagamento);
     } else if (inputs.pagamento > totalPagamento) {
-      return exits.success("O pagamento informado(" + inputs.pagamento + ") está acima do valor referente a " + inputs.quantidade + " passagen(s) que é " + totalPagamento);
+      return exits.success("O pagamento informado(" + inputs.pagamento + ") está acima do valor referente a " + inputs.quantidade + " passagens que é " + totalPagamento);
     }
 
     var vagasDisponiveis = voo.capacidadeMaxima - voo.passagens.length;

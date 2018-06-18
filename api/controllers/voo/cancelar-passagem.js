@@ -8,14 +8,10 @@ module.exports = {
 
 
   inputs: {
-    idVoo: {
+    idPassagem: {
       type: 'number',
       required: true
-    },
-    idCliente: {
-        type: 'number',
-        required: true
-    },
+    }
   },
 
 
@@ -25,6 +21,10 @@ module.exports = {
 
 
   fn: async function (inputs, exits) {
+
+    await Passagem.destroy({
+      id: inputs.idPassagem
+    });
 
     return exits.success();
 
