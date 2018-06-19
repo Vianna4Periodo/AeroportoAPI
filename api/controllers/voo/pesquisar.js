@@ -19,8 +19,7 @@ module.exports = {
       isNotEmptyString: true
     },
     valor: {
-      type: 'number',
-      columnType: 'double',
+      type: 'number'
     }
   },
 

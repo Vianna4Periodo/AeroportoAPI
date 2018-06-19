@@ -1,0 +1,349 @@
+{
+	"id": "e2242570-59d1-09e2-05ff-7a6e427e3d72",
+	"name": "AeroportoAPI",
+	"description": "",
+	"order": [],
+	"folders": [
+		{
+			"name": "Clientes",
+			"description": "",
+			"collectionId": "e2242570-59d1-09e2-05ff-7a6e427e3d72",
+			"order": [
+				"8b73825c-f96c-a7de-9e76-51e3bd417431",
+				"499c41f0-2e03-445f-068e-25e01f47a85f",
+				"59c60632-408f-6303-0dfa-1b87db852a01"
+			],
+			"owner": 0,
+			"folders_order": [],
+			"id": "fc118a99-c99f-3693-0040-4416759b8b6f"
+		},
+		{
+			"name": "Voos",
+			"description": "",
+			"collectionId": "e2242570-59d1-09e2-05ff-7a6e427e3d72",
+			"order": [
+				"b8956e84-4c23-3613-7110-b3cf5b69e9ae",
+				"f75ce775-c2df-0b1c-08b3-11c45d32924c",
+				"841e9737-9f02-6685-05cc-2724b3fe7a0f",
+				"c5cd3974-433a-d9b7-a2d3-85b8532fb0dc",
+				"c8413a96-c9df-cd04-5aec-7c30327188f7"
+			],
+			"owner": 0,
+			"folders_order": [],
+			"id": "6a4e0e6c-7b74-2591-2993-a08216895a34"
+		}
+	],
+	"folders_order": [
+		"fc118a99-c99f-3693-0040-4416759b8b6f",
+		"6a4e0e6c-7b74-2591-2993-a08216895a34"
+	],
+	"timestamp": 1529148835077,
+	"owner": 0,
+	"public": false,
+	"requests": [
+		{
+			"id": "499c41f0-2e03-445f-068e-25e01f47a85f",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:1337/api/v1/clientes/login",
+			"folder": "fc118a99-c99f-3693-0040-4416759b8b6f",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1529236369502,
+			"name": "Login",
+			"description": "",
+			"collectionId": "e2242570-59d1-09e2-05ff-7a6e427e3d72",
+			"responses": [],
+			"rawModeData": "{\n\t\"email\": \"jenifer@gmail.com\",\n\t\"password\": \"123\"\n}"
+		},
+		{
+			"id": "59c60632-408f-6303-0dfa-1b87db852a01",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:1337/api/v1/clientes/validar-cartao",
+			"folder": "fc118a99-c99f-3693-0040-4416759b8b6f",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1529408000663,
+			"name": "Validar Cartão",
+			"description": "",
+			"collectionId": "e2242570-59d1-09e2-05ff-7a6e427e3d72",
+			"responses": [],
+			"rawModeData": "{\n\t\"cartao\": \"5253171081350003\"\n}"
+		},
+		{
+			"id": "841e9737-9f02-6685-05cc-2724b3fe7a0f",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:1337/api/v1/voos/comprar-passagem",
+			"folder": "6a4e0e6c-7b74-2591-2993-a08216895a34",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1529273876677,
+			"name": "Comprar Passagem",
+			"description": "",
+			"collectionId": "e2242570-59d1-09e2-05ff-7a6e427e3d72",
+			"responses": [],
+			"rawModeData": "{\n\t\"idVoo\": 2,\n\t\"idCliente\": 1,\n\t\"quantidade\": 1,\n\t\"pagamento\": 100\n}"
+		},
+		{
+			"id": "8b73825c-f96c-a7de-9e76-51e3bd417431",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:1337/api/v1/clientes",
+			"folder": "fc118a99-c99f-3693-0040-4416759b8b6f",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1529157086284,
+			"name": "Novo Cliente",
+			"description": "",
+			"collectionId": "e2242570-59d1-09e2-05ff-7a6e427e3d72",
+			"responses": [],
+			"rawModeData": "{\n\t\"nome\": \"Jenifer Queiroz Vassallo\",\n\t\"email\": \"jenifer@gmail.com\",\n\t\"password\": \"123\"\n}"
+		},
+		{
+			"id": "b8956e84-4c23-3613-7110-b3cf5b69e9ae",
+			"headers": "",
+			"headerData": [],
+			"url": "http://localhost:1337/api/v1/voos",
+			"folder": "6a4e0e6c-7b74-2591-2993-a08216895a34",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": [
+				{
+					"key": "firstName",
+					"value": "Adriano",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "lastName",
+					"value": "Souza Costa",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "email",
+					"value": "adrianosouzacostaios@gmail.com",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "gender",
+					"value": "true",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "password",
+					"value": "12345678",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1529157078379,
+			"name": "Voos",
+			"description": "",
+			"collectionId": "e2242570-59d1-09e2-05ff-7a6e427e3d72",
+			"responses": []
+		},
+		{
+			"id": "c5cd3974-433a-d9b7-a2d3-85b8532fb0dc",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:1337/api/v1/voos/cancelar-passagem",
+			"folder": "6a4e0e6c-7b74-2591-2993-a08216895a34",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1529319387382,
+			"name": "Cancelar Passagem",
+			"description": "",
+			"collectionId": "e2242570-59d1-09e2-05ff-7a6e427e3d72",
+			"responses": [],
+			"rawModeData": "{\n\t\"idPassagem\": 1,\n}"
+		},
+		{
+			"id": "c8413a96-c9df-cd04-5aec-7c30327188f7",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:1337/api/v1/voos/pesquisar",
+			"folder": "6a4e0e6c-7b74-2591-2993-a08216895a34",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1529406555876,
+			"name": "Pesquisar",
+			"description": "",
+			"collectionId": "e2242570-59d1-09e2-05ff-7a6e427e3d72",
+			"responses": [],
+			"rawModeData": "{\n\t\"origem\": \"Juiz de Fora\",\n\t\"destino\": \"Sao Paulo\",\n\t\"dataSaida\": \"2018-04-22\",\n\t\"dataChegada\": \"2018-04-22\"\n}"
+		},
+		{
+			"id": "f75ce775-c2df-0b1c-08b3-11c45d32924c",
+			"headers": "",
+			"headerData": [],
+			"url": "http://localhost:1337/api/v1/voos/1",
+			"folder": "6a4e0e6c-7b74-2591-2993-a08216895a34",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": [
+				{
+					"key": "firstName",
+					"value": "Adriano",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "lastName",
+					"value": "Souza Costa",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "email",
+					"value": "adrianosouzacostaios@gmail.com",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "gender",
+					"value": "true",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "password",
+					"value": "12345678",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1529157096945,
+			"name": "Find By Id",
+			"description": "",
+			"collectionId": "e2242570-59d1-09e2-05ff-7a6e427e3d72",
+			"responses": []
+		}
+	]
+}
