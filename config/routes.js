@@ -49,7 +49,7 @@ module.exports.routes = {
 
   'GET /api/v1/voos': { controller: 'VooController', action: 'find' },
   'GET /api/v1/voos/:id': { controller: 'VooController', action: 'find-by-id' },
-  'GET /api/v1/voos/pesquiar': { controller: 'VooController', action: 'pesquisar' },
+  'POST /api/v1/voos/pesquisar': { controller: 'VooController', action: 'pesquisar' },
   'POST /api/v1/voos/comprar-passagem': { controller: 'VooController', action: 'comprar-passagem' },
   'POST /api/v1/voos/cancelar-passagem': { controller: 'VooController', action: 'cancelar-passagem' },
 
