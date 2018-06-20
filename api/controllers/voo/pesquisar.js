@@ -44,7 +44,7 @@ module.exports = {
         "<=": valor
       }
     }).populate("aeronave");
-    return exits.success(voos);
+    return exits.success({ "voos": voos });
 
   }
 

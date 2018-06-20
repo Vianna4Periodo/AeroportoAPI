@@ -21,7 +21,7 @@ module.exports = {
 
     try {
       var voos = await Voo.find().populate("aeronave").populate("passagens");
-      return exits.success(voos);
+      return exits.success({ "voos": voos });
     } catch (error) {
       return exits.erro(error);
     }
