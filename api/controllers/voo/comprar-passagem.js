@@ -72,10 +72,14 @@ module.exports = {
         voo: inputs.idVoo
       }).fetch();
 
-      passagens.push(novaPassagem);
+      var fullPassagem = await Passagem.findOne({
+        id: novaPassagem.id
+      }).populate("voo").populate("cliente");
+
+      passagens.push(fullPassagem);
     }
 
-    return exits.success(passagens);
+    return exits.success({ "passagens": passagens });
   }
 
 };

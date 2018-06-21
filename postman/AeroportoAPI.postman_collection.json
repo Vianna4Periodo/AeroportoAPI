@@ -127,12 +127,12 @@
 			"tests": null,
 			"currentHelper": "normal",
 			"helperAttributes": {},
-			"time": 1529273876677,
+			"time": 1529494200142,
 			"name": "Comprar Passagem",
 			"description": "",
 			"collectionId": "e2242570-59d1-09e2-05ff-7a6e427e3d72",
 			"responses": [],
-			"rawModeData": "{\n\t\"idVoo\": 2,\n\t\"idCliente\": 1,\n\t\"quantidade\": 1,\n\t\"pagamento\": 100\n}"
+			"rawModeData": "{\n\t\"idVoo\": 2,\n\t\"idCliente\": 1,\n\t\"quantidade\": 2,\n\t\"pagamento\": 400\n}"
 		},
 		{
 			"id": "8b73825c-f96c-a7de-9e76-51e3bd417431",
