@@ -252,7 +252,7 @@ module.exports = {
     *                                                                          *
     ***************************************************************************/
     onlyAllowOrigins: [
-      'https://aeroporto-api.herokuapp.com/',
+      'https://aeroporto-api.herokuapp.com',
     ],
 
 
@@ -371,7 +371,7 @@ module.exports = {
   *                                                                         *
   ***************************************************************************/
   custom: {
-    baseUrl: 'https://aeroporto-api.herokuapp.com/',
+    baseUrl: 'https://aeroporto-api.herokuapp.com',
     internalEmailAddress: 'adrianosouzacostaios@gmail.com',
 
     // mailgunDomain: 'mg.example.com',
