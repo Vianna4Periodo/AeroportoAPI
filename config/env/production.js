@@ -338,7 +338,7 @@ module.exports = {
   * this, just try deploying without setting it and see if it works.)       *
   *                                                                         *
   ***************************************************************************/
-  port: process.env.PORT || 3000,
+  port: process.env.PORT || 80,
 
 
 
@@ -372,8 +372,8 @@ module.exports = {
   *                                                                         *
   ***************************************************************************/
   custom: {
-    baseUrl: 'https://example.com',
-    internalEmailAddress: 'support@example.com',
+    baseUrl: 'https://aeroporto-api.herokuapp.com/',
+    internalEmailAddress: 'adrianosouzacostaios@gmail.com',
 
     // mailgunDomain: 'mg.example.com',
     // mailgunSecret: 'key-prod_fake_bd32301385130a0bafe030c',
