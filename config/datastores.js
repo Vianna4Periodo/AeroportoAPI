@@ -34,8 +34,7 @@ module.exports.datastores = {
 
   default: {
     adapter: 'sails-mysql',
-    url: 'mysql://root:root@localhost:8889/aeroporto-api',
-    ssl: false
+      url: 'mysql://m5nsyytbsegr12xc:b6imfnxicn0zt6f6@wm63be5w8m7gs25a.cbetxkdyhwsb.us-east-1.rds.amazonaws.com:3306/bo62ag0a3vdoc73b'
   },
 
 
