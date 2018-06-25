@@ -52,7 +52,7 @@
 					"enabled": true
 				}
 			],
-			"url": "http://localhost:1337/api/v1/clientes/login",
+			"url": "https://aeroporto-api.herokuapp.com/api/v1/clientes/login",
 			"folder": "fc118a99-c99f-3693-0040-4416759b8b6f",
 			"queryParams": [],
 			"preRequestScript": null,
@@ -65,12 +65,12 @@
 			"tests": null,
 			"currentHelper": "normal",
 			"helperAttributes": {},
-			"time": 1529236369502,
+			"time": 1529582110587,
 			"name": "Login",
 			"description": "",
 			"collectionId": "e2242570-59d1-09e2-05ff-7a6e427e3d72",
 			"responses": [],
-			"rawModeData": "{\n\t\"email\": \"jenifer@gmail.com\",\n\t\"password\": \"123\"\n}"
+			"rawModeData": "{\n\t\"email\": \"felipe@gmail.com\",\n\t\"password\": \"123\"\n}"
 		},
 		{
 			"id": "59c60632-408f-6303-0dfa-1b87db852a01",
@@ -83,7 +83,7 @@
 					"enabled": true
 				}
 			],
-			"url": "http://localhost:1337/api/v1/clientes/validar-cartao",
+			"url": "https://aeroporto-api.herokuapp.com/api/v1/clientes/validar-cartao",
 			"folder": "fc118a99-c99f-3693-0040-4416759b8b6f",
 			"queryParams": [],
 			"preRequestScript": null,
@@ -96,7 +96,7 @@
 			"tests": null,
 			"currentHelper": "normal",
 			"helperAttributes": {},
-			"time": 1529408000663,
+			"time": 1529582121166,
 			"name": "Validar Cartão",
 			"description": "",
 			"collectionId": "e2242570-59d1-09e2-05ff-7a6e427e3d72",
@@ -114,7 +114,7 @@
 					"enabled": true
 				}
 			],
-			"url": "http://localhost:1337/api/v1/voos/comprar-passagem",
+			"url": "https://aeroporto-api.herokuapp.com/api/v1/voos/comprar-passagem",
 			"folder": "6a4e0e6c-7b74-2591-2993-a08216895a34",
 			"queryParams": [],
 			"preRequestScript": null,
@@ -127,7 +127,7 @@
 			"tests": null,
 			"currentHelper": "normal",
 			"helperAttributes": {},
-			"time": 1529494200142,
+			"time": 1529581937597,
 			"name": "Comprar Passagem",
 			"description": "",
 			"collectionId": "e2242570-59d1-09e2-05ff-7a6e427e3d72",
@@ -145,7 +145,7 @@
 					"enabled": true
 				}
 			],
-			"url": "http://localhost:1337/api/v1/clientes",
+			"url": "https://aeroporto-api.herokuapp.com/api/v1/clientes",
 			"folder": "fc118a99-c99f-3693-0040-4416759b8b6f",
 			"queryParams": [],
 			"preRequestScript": null,
@@ -158,12 +158,12 @@
 			"tests": null,
 			"currentHelper": "normal",
 			"helperAttributes": {},
-			"time": 1529157086284,
+			"time": 1529582086690,
 			"name": "Novo Cliente",
 			"description": "",
 			"collectionId": "e2242570-59d1-09e2-05ff-7a6e427e3d72",
 			"responses": [],
-			"rawModeData": "{\n\t\"nome\": \"Jenifer Queiroz Vassallo\",\n\t\"email\": \"jenifer@gmail.com\",\n\t\"password\": \"123\"\n}"
+			"rawModeData": "{\n\t\"nome\": \"Felipe Ferraz\",\n\t\"email\": \"felipe@gmail.com\",\n\t\"password\": \"123\"\n}"
 		},
 		{
 			"id": "b8956e84-4c23-3613-7110-b3cf5b69e9ae",
@@ -235,7 +235,7 @@
 					"enabled": true
 				}
 			],
-			"url": "http://localhost:1337/api/v1/voos/cancelar-passagem",
+			"url": "https://aeroporto-api.herokuapp.com/api/v1/voos/cancelar-passagem",
 			"folder": "6a4e0e6c-7b74-2591-2993-a08216895a34",
 			"queryParams": [],
 			"preRequestScript": null,
@@ -248,12 +248,12 @@
 			"tests": null,
 			"currentHelper": "normal",
 			"helperAttributes": {},
-			"time": 1529319387382,
+			"time": 1529582386115,
 			"name": "Cancelar Passagem",
 			"description": "",
 			"collectionId": "e2242570-59d1-09e2-05ff-7a6e427e3d72",
 			"responses": [],
-			"rawModeData": "{\n\t\"idPassagem\": 1,\n}"
+			"rawModeData": "{\n\t\"idPassagem\": 4\n}"
 		},
 		{
 			"id": "c8413a96-c9df-cd04-5aec-7c30327188f7",
@@ -266,7 +266,7 @@
 					"enabled": true
 				}
 			],
-			"url": "http://localhost:1337/api/v1/voos/pesquisar",
+			"url": "https://aeroporto-api.herokuapp.com/api/v1/voos/pesquisar",
 			"folder": "6a4e0e6c-7b74-2591-2993-a08216895a34",
 			"queryParams": [],
 			"preRequestScript": null,
@@ -279,7 +279,7 @@
 			"tests": null,
 			"currentHelper": "normal",
 			"helperAttributes": {},
-			"time": 1529406555876,
+			"time": 1529581895264,
 			"name": "Pesquisar",
 			"description": "",
 			"collectionId": "e2242570-59d1-09e2-05ff-7a6e427e3d72",
@@ -290,7 +290,7 @@
 			"id": "f75ce775-c2df-0b1c-08b3-11c45d32924c",
 			"headers": "",
 			"headerData": [],
-			"url": "http://localhost:1337/api/v1/voos/1",
+			"url": "https://aeroporto-api.herokuapp.com/api/v1/voos/1",
 			"folder": "6a4e0e6c-7b74-2591-2993-a08216895a34",
 			"queryParams": [],
 			"preRequestScript": null,
@@ -339,7 +339,7 @@
 			"tests": null,
 			"currentHelper": "normal",
 			"helperAttributes": {},
-			"time": 1529157096945,
+			"time": 1529581857339,
 			"name": "Find By Id",
 			"description": "",
 			"collectionId": "e2242570-59d1-09e2-05ff-7a6e427e3d72",

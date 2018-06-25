@@ -38,7 +38,7 @@ module.exports = {
       return exits.notFound();
     }
 
-    return exits.success(cliente);
+    return exits.success({ "cliente": cliente });
 
   }
 

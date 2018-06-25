@@ -34,7 +34,7 @@ module.exports = {
 
   	try {
   		var cliente = await Cliente.create(inputs).fetch();
-  		return exits.success(cliente);
+  		return exits.success({ "cliente": cliente });
   	} catch(error) {
   		return exits.error(error);
   	}

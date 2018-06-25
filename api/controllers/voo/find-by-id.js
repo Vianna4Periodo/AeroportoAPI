@@ -27,13 +27,13 @@ module.exports = {
     try {
       var voo = await Voo.findOne({
         id: inputs.id
-      }).populate('passagens');
+      }).populate("aeronave");
 
       if (voo ==  null) {
         return exits.notFound();
       }
 
-      return exits.success(voo);
+      return exits.success({ "voo": voo });
     } catch(error) {
       return extis.error(error);
     }
