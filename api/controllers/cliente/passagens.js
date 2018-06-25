@@ -21,7 +21,8 @@ module.exports = {
 
 
   fn: async function (inputs, exits) {
-  	var passagens = Passagem.find({
+
+  	var passagens = await Passagem.find({
   		cliente: inputs.id
   	}).populate("aeronave");
 
