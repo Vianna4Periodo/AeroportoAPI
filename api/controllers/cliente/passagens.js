@@ -24,7 +24,7 @@ module.exports = {
 
   	var passagens = await Passagem.find({
   		cliente: inputs.id
-  	}).populate("voo").populate("voo.aeronave");
+  	}).populate("voo");
 
     return exits.success({ "passagens": passagens });
 
