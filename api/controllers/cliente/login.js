@@ -32,7 +32,7 @@ module.exports = {
     var cliente = await Cliente.findOne({
       email: inputs.email,
       password: inputs.password
-    }).populate("passagens");
+    }).populate("passagens.aeronave");
 
     if (cliente == null) {
       return exits.notFound();
