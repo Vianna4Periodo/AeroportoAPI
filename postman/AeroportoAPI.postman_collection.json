@@ -11,7 +11,8 @@
 			"order": [
 				"8b73825c-f96c-a7de-9e76-51e3bd417431",
 				"499c41f0-2e03-445f-068e-25e01f47a85f",
-				"59c60632-408f-6303-0dfa-1b87db852a01"
+				"59c60632-408f-6303-0dfa-1b87db852a01",
+				"04194d32-4e63-cc81-b176-8e356951b4d7"
 			],
 			"owner": 0,
 			"folders_order": [],
@@ -42,6 +43,37 @@
 	"public": false,
 	"requests": [
 		{
+			"id": "04194d32-4e63-cc81-b176-8e356951b4d7",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "https://aeroporto-api.herokuapp.com/api/v1/clientes/passagens/2",
+			"folder": "fc118a99-c99f-3693-0040-4416759b8b6f",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": [],
+			"dataMode": "raw",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1529926245139,
+			"name": "Passagens",
+			"description": "",
+			"collectionId": "e2242570-59d1-09e2-05ff-7a6e427e3d72",
+			"responses": [],
+			"rawModeData": "{\n\t\"cartao\": \"5253171081350003\"\n}"
+		},
+		{
 			"id": "499c41f0-2e03-445f-068e-25e01f47a85f",
 			"headers": "Content-Type: application/json\n",
 			"headerData": [
@@ -65,12 +97,12 @@
 			"tests": null,
 			"currentHelper": "normal",
 			"helperAttributes": {},
-			"time": 1529582110587,
+			"time": 1529925805228,
 			"name": "Login",
 			"description": "",
 			"collectionId": "e2242570-59d1-09e2-05ff-7a6e427e3d72",
 			"responses": [],
-			"rawModeData": "{\n\t\"email\": \"felipe@gmail.com\",\n\t\"password\": \"123\"\n}"
+			"rawModeData": "{\n\t\"email\": \"adriano@gmail.com\",\n\t\"password\": \"123\"\n}"
 		},
 		{
 			"id": "59c60632-408f-6303-0dfa-1b87db852a01",
