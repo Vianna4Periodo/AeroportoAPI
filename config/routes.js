@@ -46,6 +46,7 @@ module.exports.routes = {
   'POST /api/v1/clientes': { controller: 'ClienteController', action: 'save' },
   'POST /api/v1/clientes/login': { controller: 'ClienteController', action: 'login' },
   'POST /api/v1/clientes/validar-cartao': { controller: 'ClienteController', action: 'validar-cartao' },
+  'GET /api/v1/clientes/passagens/:id': { controller: 'ClienteController', action: 'passagens' },
 
   'GET /api/v1/voos': { controller: 'VooController', action: 'find' },
   'GET /api/v1/voos/:id': { controller: 'VooController', action: 'find-by-id' },
